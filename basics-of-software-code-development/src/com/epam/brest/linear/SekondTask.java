@@ -15,15 +15,15 @@ public class SekondTask {
         double c = scanner.nextDouble();
 
         if (a!=0 && b!=0 && (Math.pow(b,2) + 4 * a * c)>0 ) {
-            System.out.println("Task2.For the values of the variables a = " + a + " , b = " + b +
-                    " , c = " + c + " ," + "the value of the function  = " + solveLinearFunction(a, b, c) + ".");
+            System.out.printf("Task2.For the values of the variables a = %f, b = %f, c = %f " +
+                    "the value of the function  = %.2f .", a,b,c, solveLinearFunction(a, b, c));
         }else {
             System.out.println("These  values are incorrect.Try again.");
             }
     }
     public static double solveLinearFunction(double a, double b, double c){
         return (b + Math.sqrt(Math.pow(b,2) + 4 * a * c)) / ( 2 * a) - Math.pow(a,3) * c + Math.pow(b,-2);
-    }
+    }1
 }
 
 
